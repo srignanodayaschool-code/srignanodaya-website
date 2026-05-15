@@ -1,60 +1,56 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Library, Bus, Utensils, Wifi, Monitor, HeartPulse } from "lucide-react";
-
-// ... imports
+import { BookOpen, Brush, HeartHandshake, MapPinned, Palette, ShieldCheck } from "lucide-react";
 
 const facilities = [
     {
-        icon: Monitor,
-        title: "Computer Education",
-        desc: "Working knowledge of computers provided at low cost.",
-        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop",
+        icon: BookOpen,
+        title: "Interactive Classrooms",
+        desc: "Bright learning rooms with child-friendly seating and visual learning walls.",
+        image: "/media/photos/school/classroom-guided-learning.webp",
         colSpan: "md:col-span-2"
     },
     {
-        icon: Bus,
-        title: "Safe Transport",
-        desc: "GPS-enabled fleet covering all major routes.",
-        image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2069&auto=format&fit=crop",
+        icon: ShieldCheck,
+        title: "Safe Play Area",
+        desc: "Colorful outdoor play equipment in a supervised campus environment.",
+        image: "/media/photos/school/play-area-empty.webp",
         colSpan: "md:col-span-1"
     },
     {
-        icon: Library,
-        title: "A.V. Aids",
-        desc: "Quality of education enhanced by Audio-Visual aids at low cost.",
-        image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=2070&auto=format&fit=crop",
+        icon: Brush,
+        title: "Creative Learning",
+        desc: "Hands-on activities that help children learn through color, play, and practice.",
+        image: "/media/photos/school/activity-table.webp",
         colSpan: "md:col-span-1"
     },
     {
-        icon: Utensils,
-        title: "Hygienic Dining",
-        desc: "Nutritious meals in a clean, spacious hall.",
-        image: "https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?q=80&w=1932&auto=format&fit=crop",
+        icon: HeartHandshake,
+        title: "Guided Attention",
+        desc: "Teachers work closely with young learners during classroom activities.",
+        image: "/media/photos/school/group-activity.webp",
         colSpan: "md:col-span-2"
     },
     {
-        icon: HeartPulse,
-        title: "Wellness Center",
-        desc: "Full-time nurse and regular health checkups.",
-        image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2070&auto=format&fit=crop",
+        icon: MapPinned,
+        title: "Green Campus",
+        desc: "A welcoming school setting with greenery and open movement areas.",
+        image: "/media/photos/school/green-campus.webp",
         colSpan: "md:col-span-1"
     },
     {
-        icon: Wifi,
-        title: "Smart Campus",
-        desc: "Tech-enabled classrooms for immersive learning.",
-        image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
+        icon: Palette,
+        title: "Colorful Learning Rooms",
+        desc: "Playful classroom murals and activity corners designed for early learners.",
+        image: "/media/photos/school/classroom-wall.webp",
         colSpan: "md:col-span-2"
     }
 ];
 
 export default function Facilities() {
-    const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
     return (
         <section id="facilities" className="py-24 bg-white">
             <div className="container-wide">
@@ -99,8 +95,6 @@ export default function Facilities() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            onMouseEnter={() => setHoveredIndex(index)}
-                            onMouseLeave={() => setHoveredIndex(null)}
                         >
                             {/* Background Image */}
                             <div className="absolute inset-0 transition-transform duration-1000 group-hover:scale-110">

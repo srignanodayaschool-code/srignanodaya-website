@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { Heart, MapPin, Phone, Mail } from "lucide-react";
+import { Heart, MapPin, Phone, Mail, Youtube } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -57,6 +57,17 @@ export default function Footer() {
                                 <Mail size={16} className="text-gold shrink-0" />
                                 <a href="mailto:srignanodayaschool@gmail.com" className="hover:text-gold transition-colors">srignanodayaschool@gmail.com</a>
                             </p>
+                            <p className="flex items-center gap-3">
+                                <Youtube size={16} className="text-gold shrink-0" />
+                                <a
+                                    href="https://www.youtube.com/@SriGnanodayaLittleSoldiers"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-gold transition-colors"
+                                >
+                                    Sri Gnanodaya Little Soldiers
+                                </a>
+                            </p>
                         </div>
                     </div>
 
@@ -108,7 +119,7 @@ export default function Footer() {
                 </div>
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/40">
-                    <p>© 2026 Sri Gnanodaya Educational Society. All rights reserved.</p>
+                    <p>Copyright 2026 Sri Gnanodaya Educational Society. All rights reserved.</p>
                     <p className="flex items-center gap-1">
                         Made with <Heart size={12} className="text-red-500 fill-red-500" /> for Education
                     </p>

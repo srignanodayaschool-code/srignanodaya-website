@@ -9,12 +9,12 @@ const programs = [
     {
         title: "Little Soldiers",
         subtitle: "The Foundational School",
-        grade: "Baby Care • Daycare • Nursery • PP1 • PP2",
+        grade: "Baby Care - Daycare - Nursery - PP1 - PP2",
         description: "A nurturing environment recognised by Govt. of A.P. (RC No. 2637/A5/2022). We offer A/C and Non-A/C classrooms with a focus on holistic child development.",
         color: "bg-gold",
         icon: Baby,
         features: ["A/C & Non-A/C Rooms", "Spacious Play Area", "Caring Staff", "R.O. Water"],
-        image: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?q=80&w=2070&auto=format&fit=crop"
+        image: "/media/photos/school/school-playground-campus.webp"
     },
     {
         title: "Concept School",
@@ -24,7 +24,7 @@ const programs = [
         color: "bg-charcoal",
         icon: GraduationCap,
         features: ["Computer Lab", "A.V. Aids", "No Donations / No Term Fees", "Van Facility"],
-        image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop"
+        image: "/media/photos/school/classroom-guided-learning.webp"
     }
 ];
 

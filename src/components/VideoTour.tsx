@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { PlayCircle } from "lucide-react";
+import { PlayCircle, Youtube } from "lucide-react";
 
 export default function VideoTour() {
     return (
@@ -25,6 +25,15 @@ export default function VideoTour() {
                         <p className="text-lg text-slate-500 leading-relaxed max-w-xl">
                             Watch a glimpse of our learning environment, activities, and campus life.
                         </p>
+                        <a
+                            href="https://www.youtube.com/@SriGnanodayaLittleSoldiers"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="mt-8 inline-flex items-center gap-3 rounded-full bg-charcoal px-6 py-3 font-heading font-bold tracking-wide text-white transition-all hover:-translate-y-0.5 hover:bg-gold hover:text-charcoal"
+                        >
+                            <Youtube size={20} />
+                            Visit YouTube Channel
+                        </a>
                     </motion.div>
 
                     <motion.div

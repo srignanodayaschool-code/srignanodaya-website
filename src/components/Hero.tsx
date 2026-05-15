@@ -54,7 +54,7 @@ export default function Hero() {
                     style={{ x: springX, y: springY }}
                 >
                     <Image
-                        src="/media/photos/home-playground.webp"
+                        src="/media/photos/school/playground-children.webp"
                         alt="Children playing at Sri Gnanodaya School"
                         fill
                         priority

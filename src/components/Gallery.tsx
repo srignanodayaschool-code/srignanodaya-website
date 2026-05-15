@@ -6,40 +6,76 @@ import Image from "next/image";
 
 const images = [
     {
-        src: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=2069&auto=format&fit=crop",
-        alt: "School Bus",
-        category: "Transport",
+        src: "/media/photos/school/playground-children.webp",
+        alt: "Children at Play",
+        category: "Play Area",
         color: "bg-blue-600"
     },
     {
-        src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2132&auto=format&fit=crop",
-        alt: "Classroom Learning",
+        src: "/media/photos/school/classroom-guided-learning.webp",
+        alt: "Guided Classroom Learning",
         category: "Academics",
         color: "bg-amber-500"
     },
     {
-        src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop",
-        alt: "Student Activities",
+        src: "/media/photos/school/slide-play.webp",
+        alt: "Slide Play",
         category: "Activities",
         color: "bg-rose-500"
     },
     {
-        src: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop",
-        alt: "Library",
+        src: "/media/photos/school/classroom-reading.webp",
+        alt: "Early Reading Room",
         category: "Facilities",
         color: "bg-emerald-500"
     },
     {
-        src: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop",
-        alt: "Computer Lab",
-        category: "Technology",
+        src: "/media/photos/school/activity-table.webp",
+        alt: "Activity Table",
+        category: "Creative Work",
         color: "bg-purple-500"
     },
     {
-        src: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2070&auto=format&fit=crop",
-        alt: "Sports Day",
-        category: "Sports",
+        src: "/media/photos/school/school-playground-campus.webp",
+        alt: "School Play Campus",
+        category: "Campus",
         color: "bg-orange-500"
+    },
+    {
+        src: "/media/photos/school/classroom-teacher.webp",
+        alt: "Teacher With Students",
+        category: "Classroom",
+        color: "bg-cyan-600"
+    },
+    {
+        src: "/media/photos/school/group-activity.webp",
+        alt: "Group Learning Activity",
+        category: "Learning",
+        color: "bg-lime-600"
+    },
+    {
+        src: "/media/photos/school/green-campus.webp",
+        alt: "Green Campus",
+        category: "Environment",
+        color: "bg-green-700"
+    },
+    {
+        src: "/media/photos/school/classroom-study.webp",
+        alt: "Classroom Study Time",
+        category: "Academics",
+        color: "bg-indigo-600"
+    },
+    {
+        src: "/media/photos/school/classroom-wall.webp",
+        alt: "Learning Wall",
+        category: "Classroom",
+        color: "bg-pink-600"
+    },
+    {
+        src: "/media/photos/school/play-area-empty.webp",
+        alt: "Outdoor Play Equipment",
+        category: "Play Area",
+        color: "bg-teal-600"
     }
 ];
 
@@ -71,7 +107,7 @@ export default function Gallery() {
                     {images.map((img, index) => (
                         <motion.div
                             key={index}
-                            className={`group relative rounded-2xl overflow-hidden cursor-pointer ${index === 1 || index === 4 ? "md:col-span-2" : ""}`}
+                            className={`group relative rounded-2xl overflow-hidden cursor-pointer ${index === 1 || index === 5 || index === 7 ? "md:col-span-2" : ""}`}
                             initial={{ opacity: 0, scale: 0.9 }}
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
