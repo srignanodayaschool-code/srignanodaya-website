@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { Facebook, Instagram, Twitter, Linkedin, Heart, MapPin, Phone, Mail } from "lucide-react";
+import Image from "next/image";
+import { Heart, MapPin, Phone, Mail } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -12,8 +13,14 @@ export default function Footer() {
                     {/* Brand Column */}
                     <div className="space-y-6">
                         <div className="flex items-center gap-3">
-                            <div className="w-12 h-12 rounded-full bg-gold flex items-center justify-center text-charcoal font-serif font-bold text-2xl">
-                                S
+                            <div className="relative w-14 h-14 rounded-full bg-white overflow-hidden ring-1 ring-gold/40">
+                                <Image
+                                    src="/media/logo/sri-gnanodaya-school-logo.webp"
+                                    alt="Sri Gnanodaya logo"
+                                    fill
+                                    className="object-contain p-0.5"
+                                    sizes="56px"
+                                />
                             </div>
                             <div className="flex flex-col">
                                 <span className="font-heading font-bold uppercase tracking-wider leading-none text-white">

@@ -8,6 +8,7 @@ import Programs from "@/components/Programs";
 import Facilities from "@/components/Facilities";
 import Services from "@/components/Services";
 import Gallery from "@/components/Gallery";
+import VideoTour from "@/components/VideoTour";
 import Stats from "@/components/Stats";
 import Testimonials from "@/components/Testimonials";
 import Admissions from "@/components/Admissions";
@@ -42,6 +43,7 @@ export default function Home() {
     <main className="relative min-h-screen bg-off-white selection:bg-gold selection:text-charcoal">
       <Header />
       <Hero />
+      <VideoTour />
       <Stats />
       <Programs />
       <Facilities />

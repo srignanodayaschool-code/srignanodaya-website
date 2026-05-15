@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     siteName: "Sri Gnanodaya Schools",
     images: [
       {
-        url: "https://srignanodaya.in/og-image.jpg", // We should ensure this exists or use a placeholder
-        width: 1200,
-        height: 630,
+        url: "https://srignanodaya.in/media/photos/home-playground.webp",
+        width: 1600,
+        height: 900,
         alt: "Sri Gnanodaya Schools Campus",
       },
     ],

@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
-import { Menu, X, Phone, User } from "lucide-react";
+import { Mail, Menu, X, Phone } from "lucide-react";
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +29,7 @@ export default function Header() {
                 <div className="container-wide flex justify-between items-center">
                     <div className="flex gap-6">
                         <span className="flex items-center gap-2"><Phone size={12} className="text-gold" /> 9390017772, 9397961714</span>
-                        <span className="flex items-center gap-2">✉️ srignanodayaschool@gmail.com</span>
+                        <span className="flex items-center gap-2"><Mail size={12} className="text-gold" /> srignanodayaschool@gmail.com</span>
                     </div>
                     <div className="flex gap-4">
                         <span>Kanuru, Vijayawada</span>
@@ -46,8 +47,15 @@ export default function Header() {
             >
                 <div className="container-wide flex items-center justify-between">
                     <Link href="/" className="relative z-50 flex items-center gap-3 group">
-                        <div className="w-10 h-10 rounded-full bg-gold flex items-center justify-center text-charcoal font-serif font-bold text-xl overflow-hidden shadow-lg">
-                            <span className="group-hover:scale-110 transition-transform duration-300">S</span>
+                        <div className="relative w-12 h-12 rounded-full bg-white overflow-hidden shadow-lg ring-1 ring-gold/40">
+                            <Image
+                                src="/media/logo/sri-gnanodaya-school-logo.webp"
+                                alt="Sri Gnanodaya logo"
+                                fill
+                                className="object-contain p-0.5 transition-transform duration-300 group-hover:scale-105"
+                                sizes="48px"
+                                priority
+                            />
                         </div>
                         <div className="flex flex-col">
                             <span className="font-heading font-bold uppercase tracking-wider leading-none text-charcoal transition-colors">

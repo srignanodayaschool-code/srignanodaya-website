@@ -5,8 +5,8 @@ export default function JsonLd() {
         "name": "Sri Gnanodaya Schools",
         "alternateName": ["Little Soldiers & Concept School", "Sri Gnanodaya Concept School"],
         "url": "https://srignanodaya.in",
-        "logo": "https://srignanodaya.in/logo.png",
-        "image": "https://srignanodaya.in/hero-image.jpg",
+        "logo": "https://srignanodaya.in/media/logo/sri-gnanodaya-school-logo.webp",
+        "image": "https://srignanodaya.in/media/photos/home-playground.webp",
         "description": "Premier educational institution in Kanuru, Vijayawada offering world-class education with strong commitment towards academics at low cost.",
         "address": {
             "@type": "PostalAddress",

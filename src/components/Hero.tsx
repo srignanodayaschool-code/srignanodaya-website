@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import { useScroll, useTransform, motion, useMotionValue, useSpring } from "framer-motion";
 import Image from "next/image";
-import { ArrowDown, CheckCircle2, Play } from "lucide-react";
+import { ArrowDown, Play } from "lucide-react";
 
 export default function Hero() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -54,11 +54,11 @@ export default function Hero() {
                     style={{ x: springX, y: springY }}
                 >
                     <Image
-                        src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop"
-                        alt="Sri Gnanodaya School Campus"
+                        src="/media/photos/home-playground.webp"
+                        alt="Children playing at Sri Gnanodaya School"
                         fill
                         priority
-                        className="object-cover"
+                        className="object-cover object-center"
                         sizes="100vw"
                     />
                 </motion.div>
