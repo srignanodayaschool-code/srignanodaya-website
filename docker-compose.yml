@@ -1,6 +1,6 @@
 services:
   web:
-    image: ghcr.io/codemasterdevops421/srignanodaya-website:main
+    image: ghcr.io/srignanodayaschool-code/srignanodaya-website:main
     container_name: srignanodaya-web
     restart: unless-stopped
     ports:
