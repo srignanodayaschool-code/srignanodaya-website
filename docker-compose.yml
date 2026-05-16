@@ -1,11 +1,6 @@
-version: '3.9'
-
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    image: srignanodaya-website:latest
+    image: ghcr.io/codemasterdevops421/srignanodaya-website:main
     container_name: srignanodaya-web
     restart: unless-stopped
     ports:

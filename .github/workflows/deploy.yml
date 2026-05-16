@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: codemasterdevops421/srignanodaya-website
 
 jobs:
   build-and-push:
@@ -36,7 +36,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./website
+          context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
@@ -51,9 +51,8 @@ jobs:
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.VPS_SSH_KEY }}
-          source: "website/docker-compose.yml"
+          source: "docker-compose.yml"
           target: "/opt/srignanodaya"
-          strip_components: 1
 
       - name: Deploy to VPS
         uses: appleboy/ssh-action@v1.0.0
@@ -63,9 +62,7 @@ jobs:
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
             cd /opt/srignanodaya
-            # Login to GHCR if image is private (optional, usually public read packages are fine or use a token)
-            # echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ${{ github.actor }} --password-stdin
-            
+            echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u "${{ github.actor }}" --password-stdin
             docker compose pull
             docker compose up -d --remove-orphans
             docker system prune -f
